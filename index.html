@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurzusok Weblap</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #course-details, #student-details {
+            margin-top: 20px;
+        }
+        body{
+            background-color: bisque;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Kurzusok</h1>
+        <div id="course-list" class="list-group"></div>
+
+        <h2 class="mt-4" style="text-align: center;">Új kurzus létrehozása</h2>
+        <button id="new-course-btn" class="btn btn-primary">Új kurzus</button>
+
+        <div id="course-details"></div>
+
+        <h2 class="mt-4" style="text-align: center;" style="text-align: center;">Új diák hozzárendelése</h2>
+        <input type="text" id="student-name" class="form-control" placeholder="Diák neve">
+        <button id="assign-student-btn" class="btn btn-primary mt-2" style="text-align: center;">Diák hozzárendelése</button>
+
+        <div id="student-details"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
